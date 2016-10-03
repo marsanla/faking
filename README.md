@@ -19,8 +19,8 @@ faking -c <count_of_elements> -s <schema_in_json> <file_name>
 Schema is a json base on [Casual](https://www.npmjs.com/package/casual) library:
 
 ```json
-{"key_name_for_final_json": "type_of_function_from_casual"}
+{"key_name_for_final_json": "type_of_function_from_casual"}
 
 // Example
-{"complete_name": "name"}
+{"complete_name": "name"}
 ```
