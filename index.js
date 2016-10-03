@@ -35,7 +35,19 @@ program
         for(var i = 0; i<count; i++) {
             var obj = {};
             _.forEach(schema, function(value, key) {
-                obj[key] = fake[value];
+                var complexObj = value.split('|');
+
+                if(complexObj.length > 1) {
+                    if(complexObj[0] === 'random_element' ||
+                        complexObj[0] === 'random_value' ||
+                        complexObj[0] === 'random_key') {
+                            complexObj[1] = JSON.parse(complexObj[1]);
+                        }
+
+                    obj[key] = fake[complexObj[0]](complexObj[1]);
+                } else {
+                    obj[key] = fake[value];
+                }
             });
             ws.write(jsonStringify(obj));
 
