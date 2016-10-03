@@ -1,13 +1,13 @@
 {
   "name": "faking",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Generate file with fake data",
   "author": {
     "name": "Marcos Sanz Latorre",
     "email": "marcos.sanz@13genius.com",
     "url": "https://13genius.com"
   },
-  "repository": "https://github.com/marsanla/faking/tree/master",
+  "repository": "https://github.com/marsanla/faking",
   "main": "./index.js",
   "keywords": [
     "faking",

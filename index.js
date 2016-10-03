@@ -46,7 +46,11 @@ program
 
                     obj[key] = fake[complexObj[0]](complexObj[1]);
                 } else {
-                    obj[key] = fake[value];
+                    if(value === 'id') {
+                        obj[key] = i + 1;
+                    } else {
+                        obj[key] = fake[value];
+                    }
                 }
             });
             ws.write(jsonStringify(obj));

@@ -25,4 +25,7 @@ Schema is a json base on [Casual](https://www.npmjs.com/package/casual) library:
 {"complete_name": "name"}
 
 {"gender": "random_element|[\"male\",\"female\"]"}
+
+{"id": "id"}
+
 ```
